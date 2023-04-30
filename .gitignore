@@ -1,3 +1,5 @@
+.DS_Store
+./MiniGPT-4/
 offload/
 .direnv/python-*
 __pycache__/
