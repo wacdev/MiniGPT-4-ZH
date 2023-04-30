@@ -5,4 +5,4 @@ cd $DIR
 set -ex
 
 cd ./MiniGPT-4
-python demo.py --cfg-path eval_configs/minigpt4_eval.yaml
+python demo.py --cfg-path $DIR/eval_configs/minigpt4_eval.yaml
