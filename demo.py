@@ -61,6 +61,7 @@ try:
     model = model.to('cuda:0')
 except Exception as exp:
     print(exp)
+model = torch.compile(model)
 vis_processor_cfg = cfg.datasets_cfg.cc_sbu_align.vis_processor.train
 vis_processor = registry.get_processor_class(
     vis_processor_cfg.name).from_config(vis_processor_cfg)
